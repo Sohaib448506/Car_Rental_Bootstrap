@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheap Car,Hire</title>
+
+    <!--CDN Links-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--Own CSS-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive-style.css" />
+  </head>
+  <body>
+    <section class="header-section">
+      <!--Navabr-->
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./images/logo.svg" /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse left-navbar"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >USD</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><img src="./images/navBar-image.png" style="width: 1.5rem"
+                  /></a>
+                </li>
+              </ul>
+
+              <button class="btn btn-outline-success booking-btn" type="submit">
+                Manage Booking
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!--Sub PArt-->
+      <section class="top-banner-subPart">
+        <h1>Car Hire – Search, Compare & Save</h1>
+        <div class="row" style="padding-bottom: 1rem">
+          <div class="col-lg-4 col-md-6" style="padding-right: 0">
+            <i class="fa fa-check" style="padding-right: 0.2rem"></i>Free
+            cancellations on most bookings
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <i class="fa fa-check" style="padding-right: 0.2rem"></i>60,000+
+            locations
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <i class="fa fa-check" style="padding-right: 0.2rem"></i>Customer
+            support in 40+ languages
+          </div>
+        </div>
+        <div class="container search-section">
+          <div class="row">
+            <div class="col-lg-4 col-md-3">
+              <div class="input-group flex-nowrap pick-up-bar">
+                <span class="input-group-text">
+                  <i class="fa fa-search" style="background-color: white"></i
+                ></span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Pick-Up Location"
+                  aria-label="Pick-Up Location"
+                  aria-describedby="addon-wrapping"
+                />
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 d-flex">
+              <div class="input-group flex-nowrap pick-up-bar">
+                <input
+                  type="text"
+                  class="form-control"
+                  onfocus="(this.type='date')"
+                  onblur="if(this.value==''){this.type='text'}"
+                  placeholder="From"
+                />
+                <input type="time" class="form-control" />
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <div class="input-group flex-nowrap pick-up-bar">
+                <input
+                  type="text"
+                  class="form-control"
+                  onfocus="(this.type='date')"
+                  onblur="if(this.value==''){this.type='text'}"
+                  placeholder="To"
+                />
+                <input type="time" class="form-control" />
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-3 search-button">
+              <div class="pick-up-bar">
+                <button type="button" class="btn bg-success px-5">
+                  search
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="check-box-section py-3">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                  style="width: 1rem; height: 3rem"
+                />
+                <label class="form-check-label pt-3" for="flexCheckDefault">
+                  Drop car off at different location
+                </label>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  style="width: 1rem; height: 3rem"
+                />
+                <label class="form-check-label pt-3" for="flexCheckChecked">
+                  Driver aged 30 – 65?
+                </label>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="age-selection pt-3">
+                <label for="quantity"> Driver's age</label>
+                <input
+                  type="number"
+                  id="quantity"
+                  name="quantity"
+                  min="1"
+                  max="99"
+                  style="width: 2.5rem; font-size: 0.7rem"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!--JS link-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto:wght@100&display=swap");
+
+/*===========================
+||Custom Design
+=============================*/
+body {
+  font-family: "sans-serif";
+  font-weight: bold;
+}
+:root {
+  --primary-color: #1273c4;
+  --secondary-color: rgb(146, 221, 240);
+
+  --white-color: white;
+}
+/*===========================
+||Header Section Design
+=============================*/
+.header-section {
+  background-image: url("../images/bg-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding: 0;
+}
+
+.header-section .container-fluid .navbar {
+  padding: 0;
+}
+.header-section .container-fluid .navbar-brand {
+  padding-left: 4.4rem;
+}
+.header-section .left-navbar {
+  justify-content: end;
+  padding-right: 4.4rem;
+}
+.header-section .nav-item a {
+  color: white !important;
+  margin-right: 1.5rem;
+  font-weight: 600;
+}
+
+.header-section .booking-btn {
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  border: var(--white-color);
+}
+
+.header-section .booking-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+/*===========================
+||top-banner-subPart Design
+=============================*/
+
+.top-banner-subPart {
+  padding: 2rem 5.6rem;
+  color: white;
+  font-weight: 700;
+}
+
+.top-banner-subPart h1 {
+  padding-top: 1rem;
+}
+.search-section {
+  background-color: yellow;
+  padding: 10px;
+}
+.pick-up-bar {
+  border-radius: 0.3rem;
+  padding-right: 0;
+}
+
+.search-button button {
+  border: 2px solid yellow;
+  border-radius: 0.3rem;
+  padding-top: 0.5rem;
+}
+
+.top-banner-subPart .form-check {
+  margin-right: 2rem;
+}
