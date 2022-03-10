@@ -5,13 +5,13 @@
 =============================*/
 body {
   font-family: "sans-serif";
-  font-weight: bold;
 }
 :root {
   --primary-color: #1273c4;
   --secondary-color: rgb(146, 221, 240);
-
+  --btn-color: green;
   --white-color: white;
+  --footer-color: #1879ca;
 }
 /*===========================
 ||Header Section Design
@@ -66,6 +66,7 @@ body {
 .search-section {
   background-color: yellow;
   padding: 10px;
+  border-radius: 5px;
 }
 .pick-up-bar {
   border-radius: 0.3rem;
@@ -80,4 +81,116 @@ body {
 
 .top-banner-subPart .form-check {
   margin-right: 2rem;
+}
+
+/*===========================
+||Brand-Section Design
+=============================*/
+.brand-section {
+  margin-top: 40px;
+}
+
+.brand-section h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/*===========================
+||Option Section Design
+=============================*/
+.options-section {
+  margin-top: 4rem;
+}
+
+/*===========================
+||Option Section Design
+=============================*/
+.promotion-section {
+  margin-top: 3rem;
+}
+.promotion-section .promotion-1,
+.promotion-section .promotion-2 {
+  border: 1px solid rgb(180, 174, 174);
+  border-radius: 5px;
+  margin: 1rem;
+}
+
+.promotion-section h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.promotion-1 {
+  margin-right: 1rem;
+}
+.promotion-section .container .row {
+  justify-content: center;
+  padding: 7px;
+}
+
+.promotion-2 button {
+  background-color: var(--btn-color);
+  color: var(--white-color);
+}
+.options-section h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+/*===========================
+||Destination Section Design
+=============================*/
+
+.destinations h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.destinations .worldwide {
+  padding-bottom: 20px;
+}
+
+.destinations a {
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.destinations a:hover {
+  text-decoration: underline;
+}
+/*===========================
+||FAQs-Additional Section Design
+=============================*/
+
+.FAQs-Additional .additional a {
+  text-decoration: none;
+  font-size: 12px;
+}
+.additional-space {
+  margin-bottom: 15px;
+}
+
+.FAQs-Additional .additional a:hover {
+  text-decoration: underline;
+}
+.FAQs-Additional h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/*===========================
+||Footer Section Design
+=============================*/
+
+.footer-section {
+  background-color: var(--footer-color);
+}
+.footer-section a {
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
 }
