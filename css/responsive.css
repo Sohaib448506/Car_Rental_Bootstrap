@@ -52,4 +52,9 @@
   .brand-section .brand-set2 {
     text-align: center;
   }
+
+  .promotion-section .promotion-1 .promotion-1-div img,
+  .promotion-2-div img {
+    width: 4rem;
+  }
 }
