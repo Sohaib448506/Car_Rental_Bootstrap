@@ -21,7 +21,7 @@
     />
     <!--Own CSS-->
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/responsive-style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body>
     <section class="header-section">
@@ -69,7 +69,7 @@
       <!--Sub PArt-->
       <section class="top-banner-subPart">
         <h1>Car Hire – Search, Compare & Save</h1>
-        <div class="row" style="padding-bottom: 1rem">
+        <div class="row subparts" style="padding-bottom: 1rem">
           <div class="col-lg-4 col-md-6" style="padding-right: 0">
             <i class="fa fa-check" style="padding-right: 0.2rem"></i>Free
             cancellations on most bookings
@@ -106,9 +106,16 @@
                   class="form-control"
                   onfocus="(this.type='date')"
                   onblur="if(this.value==''){this.type='text'}"
-                  placeholder="From"
+                  placeholder="From Date"
                 />
-                <input type="time" class="form-control" />
+
+                <input
+                  type="text"
+                  class="form-control"
+                  onfocus="(this.type='time')"
+                  onblur="if(this.value==''){this.type='text'}"
+                  placeholder="Time"
+                />
               </div>
             </div>
             <div class="col-lg-3">
@@ -118,16 +125,20 @@
                   class="form-control"
                   onfocus="(this.type='date')"
                   onblur="if(this.value==''){this.type='text'}"
-                  placeholder="To"
+                  placeholder="To Date"
                 />
-                <input type="time" class="form-control" />
+                <input
+                  type="text"
+                  class="form-control"
+                  onfocus="(this.type='time')"
+                  onblur="if(this.value==''){this.type='text'}"
+                  placeholder="Time"
+                />
               </div>
             </div>
             <div class="col-lg-2 search-button">
               <div class="pick-up-bar">
-                <button type="button" class="btn bg-success px-5">
-                  search
-                </button>
+                <button type="button" class="btn bg-success">search</button>
               </div>
             </div>
           </div>
@@ -191,34 +202,34 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 brand-set1">
             <div class="row">
-              <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-6 sm-mb-2">
                 <img src="./images/brands/brand-1.gif" alt="Brand-Image" />
               </div>
-              <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-6 sm-mb-1">
                 <img src="./images/brands/brand-2.gif" alt="Brand-Image" />
               </div>
-              <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-6 col-sm-mb-1">
                 <img src="./images/brands/brand-3.gif" alt="Brand-Image" />
               </div>
-              <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-6 col-sm-mb-1">
                 <img src="./images/brands/brand-4.gif" alt="Brand-Image" />
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 brand-set2">
             <div class="row">
-              <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-6">
                 <img src="./images/brands/brand-5.gif" alt="Brand-Image" />
               </div>
-              <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-6">
                 <img src="./images/brands/brand-6.gif" alt="Brand-Image" />
               </div>
-              <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-6">
                 <img src="./images/brands/brand-7.gif" alt="Brand-Image" />
               </div>
-              <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-6">
                 <img src="./images/brands/brand-8.gif" alt="Brand-Image" />
               </div>
             </div>
@@ -274,11 +285,11 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-5 promotion-1">
-            <div class="row">
-              <div class="col-lg-3">
+            <div class="row promotion-1-div">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-3">
                 <img src="./images/brands/promototion-1.png" />
               </div>
-              <div class="col-lg-9">
+              <div class="col-lg-9 col-md-9 col-sm-9 col-9">
                 <h3>
                   Clean cars. Flexible bookings. Socially distant rental
                   counters.
@@ -287,15 +298,16 @@
                   We’re working with our partners to keep you safe and in the
                   driving seat.
                 </p>
+                <a href="#">Find out more</a>
               </div>
             </div>
           </div>
           <div class="col-lg-5 promotion-2">
-            <div class="row">
-              <div class="col-lg-3">
+            <div class="row promotion-2-div">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-3">
                 <img src="./images/brands/promotion-2.png" />
               </div>
-              <div class="col-lg-9">
+              <div class="col-lg-9 col-md-9 col-sm-9 col-9">
                 <h3>Subscribe for exclusive offers and deals!</h3>
                 <div class="row">
                   <div class="col-lg-12">
@@ -943,32 +955,89 @@
     </section>
     <section class="footer-section">
       <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-              <a href="#">Privacy Notice</a>
-            </div>
-            <div class="col-lg-1 col-md-2 col-sm-2 col-2">
-              <a href="#">Cookies</a>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-2 col-2">
-              <a href="#">Terms & Conditions</a>
-            </div>
-            <div class="col-lg-1 col-md-1 col-sm-2 col-2">
-              <a href="#">Help</a>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-              <a href="#">Modern Slavery Statement</a>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-              <a href="#">Supply Partner Enquiry and Marketplace</a>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-              <a href="#">Affiliate Programme</a>
-            </div>
+        <ul class="footer-list">
+          <li><a href="#">Privacy Notice</a></li>
+          <li><a href="#">Cookies</a></li>
+          <li><a href="#"> Terms & Conditions</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Modern Slavery Statement</a></li>
+          <li><a href="#">Supply Partner Enquiry and Marketplace</a></li>
+          <li><a href="#">Supply Partner Enquiry and Marketplace</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </footer>
+    </section>
+    <section class="explanation">
+      <div class="container">
+        <!-- Media object -->
+        <div class="d-flex explanation-object">
+          <!-- Body -->
+          <div>
+            <p>
+              Rentalcars.com is a trading name of Booking.com Transport Limited
+              which is a limited company registered in England and Wales
+              (Number: 05179829) whose registered address is at 100 New Bridge
+              Street, London, EC4V 6JA. VAT number: GB 855349007.
+            </p>
+            <p>
+              Rentalcars.com is part of Booking Holdings Inc., the world leader
+              in online travel & related services.
+            </p>
+            <p>
+              Booking.com Transport Limited (FCA Firm Reference Number 777648)
+              is an Appointed Representative of Cover Genius Limited, which is
+              authorised and regulated by the Financial Conduct Authority (FCA
+              Firm Reference Number 750711).TravelJigsaw Insurance Limited is
+              incorporated in Malta and is authorised by the Malta Financial
+              Services Authority to carry on the business of insurance in terms
+              of the Insurance Business Act 1998. Company Registration Number:
+              C82173 Registered Office, Development House, St Anne Street,
+              Floriana, FRN 9010, Malta.
+            </p>
+          </div>
+          <!-- Image -->
+          <div class="explanation-img">
+            <img
+              src="./images/brands/explanation.png"
+              alt="Explanation"
+              class="me-3"
+              style="height: fit-content"
+            />
           </div>
         </div>
-      </footer>
+        <!-- Media object -->
+      </div>
+    </section>
+
+    <section class="partners">
+      <div class="container">
+        <div class="row partners-images">
+          <div class="col-lg-2 col-md-2">
+            <img src="./images/partners/p1.png" alt="partner" />
+          </div>
+          <div class="col-lg-2 col-md-2">
+            <img src="./images/partners/p2.png" alt="partner" />
+          </div>
+          <div class="col-lg-2 col-md-2">
+            <img src="./images/partners/p3.png" alt="partner" />
+          </div>
+          <div class="col-lg-2 col-md-2">
+            <img src="./images/partners/p4.png" alt="partner" />
+          </div>
+          <div class="col-lg-2 col-md-2">
+            <img src="./images/partners/p5.png" alt="partner" />
+          </div>
+          <div class="col-lg-2 col-md-2">
+            <img src="./images/partners/p6.png" alt="partner" />
+          </div>
+        </div>
+        <div>
+          <p>
+            Copyright © 2022 Booking.com Transport Limited trading as
+            Rentalcars.com. All rights reserved
+          </p>
+        </div>
+      </div>
     </section>
 
     <!--JS link-->
