@@ -1,2 +1,64 @@
-@media screen and (max-width: 990px) {
+@media screen and (min-width: 1120px) {
+  .search-section .search-button button {
+    padding: 5px 42px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .explanation .explanation-object {
+    display: block !important;
+  }
+  .explanation .explanation-img {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 991px) {
+  .FAQs-Additional .FAQ,
+  .additional {
+    border: 1px solid rgb(180, 174, 174);
+    margin-bottom: 15px;
+  }
+
+  .promotion-section .promotion-1 .promotion-1-div,
+  .promotion-2-div {
+    flex-direction: row-reverse;
+  }
+  .brand-section .brand-set1 img,
+  .brand-section .brand-set2 img {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .partners .partners-images {
+    display: none;
+  }
+  .top-banner-subPart h1 {
+    font-size: 1.5rem;
+  }
+  .subparts {
+    font-weight: normal;
+  }
+  .subparts div {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 603px) {
+  .top-banner-subPart h1 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .brand-section .brand-set1,
+  .brand-section .brand-set2 {
+    text-align: center;
+  }
+
+  .promotion-section .promotion-1 .promotion-1-div img,
+  .promotion-2-div img {
+    width: 4rem;
+  }
+
+  .options-section img {
+    width: 42px;
+  }
 }
